@@ -440,7 +440,7 @@ video {
 
 #progress-container {
     pointer-events: auto;
-    margin-bottom: var(--space-sm);
+    margin-bottom: 0px;
 }
 
 #controls {
@@ -548,8 +548,8 @@ video {
     width: 100%;
     cursor: pointer;
     position: relative;
-    padding: 18px 0;
-    min-height: 52px;
+    padding: 2px 0;
+    min-height: 14px;
     touch-action: none;
     padding-left: 5px;
     padding-right: 5px;
@@ -1051,7 +1051,12 @@ video {
 
 @media (max-width: 768px) {
     #time-row {
-        display: none;
+        display: flex;
+        font-size: 11px;
+        width: auto;
+        padding: 0 12px;
+        height: var(--ctrl-size-sm);
+        gap: 4px;
     }
 }
 
